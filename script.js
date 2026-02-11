@@ -1,3 +1,5 @@
 function addToDo() {
-  toDoList.innerHTML += "<li>Neues TODO</li>";
+  toDoList.innerHTML +=
+    '<li><input type="checkbox">' + toDoField.value + "</li>";
+  toDoField.value = "";
 }

@@ -4,17 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do Liste</title>
+    <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+      }
+
+      h1 {
+        font-weight: 400;
+      }
+
+      button {
+        background-color: rgb(239, 120, 60);
+        border: none;
+        color: white;
+        padding: 3px 10px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      input {
+        border-radius: 8px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 3px 10px;
+      }
+
+      ::placeholder {
+        color: rgba(0, 0, 0, 0.1);
+      }
+
+      ul {
+        padding: 3px 10px;
+        list-style-type: none;
+      }
+    </style>
   </head>
   <body>
     <h1>Meine To Do Liste</h1>
     <input id="toDoField" placeholder="Bitte Text eingeben" />
     <button onclick="addToDo()">Speichern</button>
 
-    <ul id="toDoList">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ul>
+    <ul id="toDoList"></ul>
 
     <script src="script.js"></script>
   </body>
